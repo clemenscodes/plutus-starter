@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 # Wallet 1
 curl -s -H "Content-Type: application/json" \
   --request POST \
@@ -12,4 +11,3 @@ curl -s -H "Content-Type: application/json" \
   --request POST \
   --data '{"caID": "GameContract", "caWallet":{"getWallet": 2}}' \
   http://localhost:9080/api/contract/activate | jq
-

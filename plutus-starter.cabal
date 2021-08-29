@@ -61,6 +61,7 @@ test-suite plutus-example-projects-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   hs-source-dirs: examples/test
+  ghc-options: -fplugin-opt PlutusTx.Plugin:defer-errors
   other-modules:
     Spec.Game
   build-depends:
