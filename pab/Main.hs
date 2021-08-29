@@ -24,7 +24,7 @@ import qualified Plutus.PAB.Effects.Contract.Builtin as Builtin
 import           Plutus.PAB.Simulator                (SimulatorEffectHandlers)
 import qualified Plutus.PAB.Simulator                as Simulator
 import qualified Plutus.PAB.Webserver.Server         as PAB.Server
-import           Plutus.Contracts.Game               as Game
+import Plutus.Contracts.Game as Game ( GameSchema, game )
 
 main :: IO ()
 main = void $ Simulator.runSimulationWith handlers $ do
